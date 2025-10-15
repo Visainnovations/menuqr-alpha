@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Srinivas - Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="app-container">
+        <header id="header" class="sticky-header">
+            </header>
+
+        <main id="main-content">
+            <div id="closed-banner-container"></div>
+            
+            <div class="banner-card">
+                <img src="images/ads/hotel-banner.jpeg" alt="Restaurant Banner" class="restaurant-banner-img">
+            </div>
+
+            <div id="info-card-container"></div>
+            
+            <div id="ad-carousel-container"></div>
+
+            <div id="search-results-container"></div>
+
+            <div id="category-pills-container" class="category-pills-wrapper"></div>
+            
+            <div id="menu-items-container"></div>
+
+            <div id="empty-state-container" style="display: none;"></div>
+
+            <footer id="footer-container"></footer>
+        </main>
+    </div>
+
+    <button id="scroll-to-top" class="scroll-to-top-btn" aria-label="Scroll to top" style="display: none;">
+        <svg class="w-6 h-6 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" stroke="currentColor"><path d="M5 15l7-7 7 7"></path></svg>
+    </button>
+
+    <div id="modal-container"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
