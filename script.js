@@ -1,8 +1,8 @@
 // --- MOCK DATA ---
 const mockRestaurant = {
     id: '1',
-    name: 'Hotel Srinivas',
-    nameTamil: 'ஹோட்டல் ஸ்ரீனிவாஸ்',
+    name: 'Hotel Shrinivash',
+    nameTamil: 'ஹோட்டல் ஸ்ரீநிவாஸ்',
     primaryColor: '#D97706',
     phone: '+91 86819 91818',
     address: 'Thiruppathi Nagar, APK Main Road, Avaniapuram, Madurai - 625012',

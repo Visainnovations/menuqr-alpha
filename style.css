@@ -344,10 +344,48 @@ body.dark .card {
 }
 .restaurant-banner-img {
   width: 100%;
-  height: 6rem;
-  object-fit: cover;
+  height: 100%;
+  object-fit: fill; /* keeps aspect, crops edges to fill container */
   object-position: center;
   display: block;
+}
+
+/* Responsive banner sizing (mobile-first)
+   - Mobile: slightly taller banner so image stays visible on narrow viewports
+   - Tablet: reduce aspect to be wider
+   - Desktop: fixed comfortable height for large screens */
+.banner-card {
+  aspect-ratio: 16 / 7; /* mobile default: taller banner */
+  height: auto;
+  max-height: 18rem; /* prevents extremely tall banners on small devices */
+}
+
+/* Small tablets */
+@media (min-width: 640px) {
+  .banner-card {
+    aspect-ratio: 16 / 6;
+    max-height: 20rem;
+  }
+}
+
+/* Slightly wider on medium screens */
+@media (min-width: 768px) {
+  .banner-card {
+    aspect-ratio: 16 / 5;
+    max-height: 22rem;
+  }
+}
+
+/* Desktop / laptop: fixed height for balanced look */
+@media (min-width: 1024px) {
+  .banner-card {
+    aspect-ratio: auto;
+    height: 16rem; /* tuned for laptop/monitor */
+    max-height: none;
+  }
+  .restaurant-banner-img {
+    height: 100%;
+  }
 }
 
 /* --- Share Modal --- */
